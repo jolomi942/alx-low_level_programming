@@ -7,13 +7,6 @@
 int main.c(){
 	
 
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
+	printf("_putcher" /n);
 	return (0)
 }
