@@ -1,25 +1,28 @@
 #include "main.h"
+
+
 /**
- * jack_bauer - Entry point
- *
+ * print_square - prints a square, followed by a new line;
+ * @size: size of the square
  */
 
-
-void jack_bauer(void)
+void print_square(int size)
 {
-	int i;
-	int j;
-
-	for (i = 0; i <= 23; i++)
+	if (size <= 0)
 	{
-		for (j = 0; j <= 59; j++)
-		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(':');
-			_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			_putchar('\n');
-		}
+	_putchar('\n');
+	}
+	else
+	{
+	int i, j;
+
+	for (i = 0; i < size; i++)
+	{
+	for (j = 0; j < size; j++)
+	{
+	_putchar('#');
+	}
+	_putchar('\n');
+	}
 	}
 }
