@@ -2,15 +2,31 @@
 
 
 /**
- * print_last_digit - Entry point
- *
- * @n: inetger to represent
- *
- * Return: last digit of n
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: number of times the character \ should be printed
  */
 
-int print_last_digit(int n)
+void print_diagonal(int n)
+
 {
-	_putchar('0' + _abs(n % 10));
-	return (_abs(n % 10));
+	if (n <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+	int i, j;
+
+	for (i = 0; i < n; i++)
+	{
+	for (j = 0; j < n; j++)
+	{
+	if (j == i)
+	_putchar('\\');
+	else if (j < i)
+	_putchar(' ');
+	}
+	_putchar('\n');
+	}
+	}
 }
